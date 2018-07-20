@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import StarWars from "./views/StarWars.vue";
 import About from "./views/About.vue";
 
 Vue.use(Router);
@@ -10,7 +10,12 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: StarWars
+    },
+    {
+      path: "/star-wars",
+      name: "star-wars",
+      component: StarWars
     },
     {
       path: "/about",

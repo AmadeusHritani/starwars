@@ -1,5 +1,10 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div class="container">
+	    <section class="jumbotron bg-dark text-white text-center">
+		    <h1>STAR WARS | ETRAVELI</h1>
+		    <h5>by <b>Amadeus Hritani</b></h5>
+	    </section>
+    </div>
   </div>
 </template>

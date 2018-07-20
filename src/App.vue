@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="etraveli">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/star-wars">Star Wars</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -9,18 +9,25 @@
 </template>
 
 <style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
 
-#nav
-  padding 30px
-  a
-    font-weight bold
-    color #2c3e50
-    &.router-link-exact-active
-      color #42b983
+	#etraveli
+		-webkit-font-smoothing antialiased
+		-moz-osx-font-smoothing grayscale
+		height 100vh
+		font-family -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+
+	#nav
+		text-align center
+		padding 10px
+		a
+			font-weight bold
+			color #2c3e50
+			text-decoration none
+			&.router-link-exact-active
+				color #2ea3f2
+	body
+		margin 0
+		font-size 0.8em
+		color #555555
+
 </style>
