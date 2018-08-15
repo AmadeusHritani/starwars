@@ -1,6 +1,6 @@
 # Etraveli | Star Wars Movies
 
-This is a private git for Etraveli recruitment task.
+This is a private git for experimenting & testing VueJS.
 By Amadeus Hritani
 
 ## Getting Started
@@ -56,9 +56,4 @@ To deploy it on a live server, upload the *build* folder after running build fro
 
 ## License
 
-This project is licensed under the MIT License - But private to Etraveli & Amadeus Hritani
-
-## Acknowledgments
-
-* Project bluebrints & screens produced by [Marcus/Etraveli](https://www.etraveli.com/)
-* Inspiration by [Digby Jones](https://open.spotify.com/artist/4RSNNGdvEfBA2s3ziDFUlU) =)
+This project is licensed under the MIT License
