@@ -52,7 +52,7 @@ To deploy it on a live server, upload the *build* folder after running build fro
 
 ## Author
 
-* **Amadeus Hritani** - *Entire development* - [AmadeusHoritani](https://github.com/AmadeusHoritani)
+* **Amadeus Hritani** - *Entire development* - [AmadeusHritani](https://github.com/AmadeusHritani)
 
 ## License
 
