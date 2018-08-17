@@ -29,6 +29,7 @@
 
 <script>
 // @ => /src
+import _ from "lodash";
 import MoviesList from "@/components/MoviesList.vue";
 import Tools from "@/components/Tools.vue";
 import MovieDetails from "@/components/MovieDetails.vue";
@@ -65,8 +66,8 @@ export default {
     }
   },
   methods: {
-    sortMovies: function(updatedMovies) {
-      this.movies = updatedMovies;
+    sortMovies: function(sortedMovies) {
+      this.movies = sortedMovies;
     },
     searchQuery: function(query) {
       this.query = query;
@@ -74,7 +75,7 @@ export default {
     showMovieDetails: function(movieId) {
       // console.log(movieId);
       this.movieDetails = _.filter(this.movies, { id: movieId })[0].fields;
-      console.log(this.movieDetails);
+      // console.log(this.movieDetails);
       // console.log(_.filter(this.movies, { id: movieId })[0]);
     }
   },
@@ -91,7 +92,7 @@ export default {
 </script>
 
 <style lang="stylus">
-	@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+	/*@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");*/
 
 	.right-pan
 		position relative

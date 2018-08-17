@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "StarWarsMoviesItem",
+  name: "EllosProductsListItem",
   props: ["movie"],
   computed: {
     episode: function() {

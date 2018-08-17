@@ -1,7 +1,7 @@
 <template>
-  <div id="etraveli">
+  <div id="ellos-app">
     <div id="nav">
-      <router-link to="/star-wars">Star Wars</router-link> |
+      <router-link to="/">Products List</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -10,7 +10,7 @@
 
 <style lang="stylus">
 
-	#etraveli
+	#ellos-app
 		-webkit-font-smoothing antialiased
 		-moz-osx-font-smoothing grayscale
 		height 100vh

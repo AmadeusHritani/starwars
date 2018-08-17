@@ -14,11 +14,6 @@ export default new Router({
       component: StarWars
     },
     {
-      path: "/star-wars",
-      name: "star-wars",
-      component: StarWars
-    },
-    {
       path: "/about",
       name: "about",
       component: About

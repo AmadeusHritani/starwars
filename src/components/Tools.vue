@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import _ from "lodash";
 export default {
   name: "Tools",
   props: ["movies"],
@@ -38,24 +39,29 @@ export default {
   },
   methods: {
     toggleSortOptions: function() {
-      $(".sort-options").toggleClass("visible");
+      let $sort = document.querySelector(".sort-options");
+      let visible = false;
+      for (let i = 0; i < $sort.classList.length; i++) {
+        $sort.classList[i] === "visible" ? (visible = true) : null;
+      }
+      visible === true
+        ? $sort.classList.remove("visible")
+        : $sort.classList.add("visible");
     },
 
     searchQuery: function() {
-      // console.log(this.query);
       this.$emit("searchQuery", this.query.toLowerCase());
     },
 
     sortMovies(movies, key) {
       let sortedMovies = _.orderBy(movies, key, "asc");
-      console.log(sortedMovies);
       // Add active to target list item
       if (key === "fields.episode_id") {
-        $(".sort-id").addClass("active");
-        $(".sort-year").removeClass("active");
+        document.querySelector(".sort-id").classList.add("active");
+        document.querySelector(".sort-year").classList.remove("active");
       } else if (key === "fields.release_date") {
-        $(".sort-year").addClass("active");
-        $(".sort-id").removeClass("active");
+        document.querySelector(".sort-id").classList.remove("active");
+        document.querySelector(".sort-year").classList.add("active");
       }
       this.$emit("sortMovies", sortedMovies);
     }

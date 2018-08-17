@@ -1,4 +1,4 @@
-# Etraveli | Star Wars Movies
+# Ellos | Makeover POC
 
 This is a private git for experimenting & testing VueJS.
 By Amadeus Hritani
